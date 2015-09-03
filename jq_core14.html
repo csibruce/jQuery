@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<script src="jquery-1.11.3.js"></script>
+	<link rel="stylesheet" href="">
+	<script type="text/javascript">
+	$(function(){
+		$('#list').css('border', '2px solid orange').css('font-size', '30px');
+		$('p').css('border', '2px solid red');
+		$('span').css('background', 'pink').css('color', 'red');
+		$('span a').css('text-decoration', 'overline').css('color', '#000000');
+		$('span.detail').css('color', 'blue');
+		$('div~b').css('background', 'lightgreen');
+		$('div>b').css('border', '1px solid red');
+		$('div+b').css('border', '2px solid blue');
+		$('p[title]').css('border', '2px solid black').width(400);
+		$('input[type="password"]').css('color', 'red');
+
+	})
+	</script>
+</head>
+<body>
+<div>
+	<span>교육의 요람<a>(재)대덕 인재 개발원</a>으로오세요</span><br><br>
+	<a>빠워에게 메일보내기</a>
+	<p>
+	RIA기술 : <input type="checkbox" name="ria" value="플렉스">플렉스
+			  <input type="checkbox" name="ria" value="실버라이트">실버라이트
+			  <input type="checkbox" name="ria" value="HTML5">HTML5
+	성별 : <input type="radio" name="sex" value="남자" placeholder="">남자
+		   <input type="radio" name="sex" value="여자" placeholder="">여자
+		   <input type="button" name="" value="클릭">
+	</p>
+	<div id="list">selector의 종류들입니다.</div>
+	<b>엘리먼트 : </b><span class="detail"><b>태그명, ID속성값, CLASS속성값 이용</b></span><br>
+	<b>속성 : </b><span class="detail"><b>각 요소에 설정된 속성명과 속성값 이용</b></span>
+	<span></span>
+	<b>form : </b><span class="detail"><b>input, select, textarea등의 특성을 이용</b></span>
+
+
+	<div id="body">
+	<p>일반문단입니다</p>
+	<p title="툴팁으로 보입니다.">타이틀을 가지고 있는 문단입니다</p>
+	<input type="text" name="" value="회원번호" placeholder="">회원번호</input>
+	<input type="password" name="" value="비밀번호" placeholder="">비밀번호</input>
+	</div>
+</div>
+	
+</body>
+</html>

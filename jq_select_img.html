@@ -1,0 +1,144 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <script src="jquery-1.11.3.js"></script>
+  <link rel="stylesheet" href="">
+
+  <style type="text/css">
+  table{
+    text-align: center;
+  }
+  tr{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  td{
+    width: 200px;
+  }
+  tr:nth-child(even){
+    background:white;
+  }
+    tr:nth-child(odd){
+    background:lightgray;
+  }
+
+
+  </style>
+
+  <script type="text/javascript">
+  $(function(){
+    $('body').css('background', 'lightyellow');
+    $('img').width(100);
+    $('#imgf').height(100);
+    $('a[href^="mailto"]').css('background', 'red');
+    $('img[id!="hibiscus"]').css('border', '1px solid black');
+    $('img[src$=jpg]').css('border', '3px solid red');
+    $('input[type="text"]').css('border', '1px solid black');
+    $('img[title*="named"]').css('border', '3px solid blue');//단어는 ~표시 글자중에 찾는거면 *표
+    $('a[href*="power2c"]').css('text-decoration', 'none');
+    $('img[alt]').css('border', '3px solid lightgreen');
+    $('img').hover(function() {
+      /* Stuff to do when the mouse enters the element */
+       $(this).width(120);
+
+    }, function() {
+      /* Stuff to do when the mouse leaves the element */
+       $(this).width(100);
+    });
+
+
+    //첫번째 마지막의 요소의 배경색을 바꿔라
+  
+    $('li:first,li:last').css('background', 'yellow').width(500);
+    $('li:eq(5)').css('background', 'red').width(500);
+    $('li:lt(4)').css('font-size', '25px').css('font-weight', 'bold');
+    $('li:even').css('font-size', '30px').css('color', 'lightgreen');
+
+
+
+  })
+  </script>
+</head>
+
+<body>
+<a href="http://www.ddit.or.kr">(재)대덕 인재 개발원</a><br><br>
+<a href="mailto:power2c@ddit.or.kr">빠워에게 메일보내기</a><br><br>
+<div><label>Some images:</label></div>
+<div id="imgf">
+  <img src="images/1.jpg" id="hibiscus" alt="Hibiscus">
+  <img src="images/2.jpg" id="little-Bear" title="A dog named little Bear">
+  <img src="images/3.jpg" id="verbena" alt="Verbena">
+  <img src="images/4.jpg" id="cozmo" title="A puppy named Cozmo">
+  <img src="images/5.jpg" id="tigerLily" alt="Tiger Lily">
+  <img src="images/6.jpg" id="little" title="coffeePot">
+  <img src="images/7.jpg" id="mountain" title="mount">
+</div>
+<div id="showimg">
+  
+</div>
+<div id="someDiv">이곳은 ID속성이 <tt>someDiv</tt>인 &lt;div&gt;태그 입니다. </div>
+<form>
+  <div>
+    <label>Text:</label> <input type="text" id="aTextField" name="someTextField"/>
+  </div>
+   <button type="submit" id="submitButton">Submit</button><input type="button" value="클릭~~">
+</form>
+    <ul>
+      <li>one</li>
+      <li>two</li>
+      <li>three</li>
+      <li>four</li>
+      <li>five</li>
+      <li>six</li>
+      <li>seven</li>
+      <li>eight</li>
+      <li>nine</li>
+      <li>ten</li>
+    </ul>
+
+<table>
+  <tr>
+    <td colspan="" rowspan="" headers="">one</td>
+    <td colspan="" rowspan="" headers="">62만원</td>
+  </tr>
+  <tr>
+    <td colspan="" rowspan="" headers="">twq</td>
+    <td colspan="" rowspan="" headers="">62만원</td>
+  </tr>
+  <tr>
+    <td colspan="" rowspan="" headers="">three</td>
+    <td colspan="" rowspan="" headers="">62만원</td>
+  </tr>
+  <tr>
+    <td colspan="" rowspan="" headers="">four</td>
+    <td colspan="" rowspan="" headers="">62만원</td>
+  </tr>
+  <tr>
+    <td colspan="" rowspan="" headers="">five</td>
+    <td colspan="" rowspan="" headers="">62만원</td>
+  </tr>
+  <tr>
+    <td colspan="" rowspan="" headers="">six</td>
+    <td colspan="" rowspan="" headers="">62만원</td>
+  </tr>
+  <tr>
+    <td colspan="" rowspan="" headers="">seven</td>
+    <td colspan="" rowspan="" headers="">62만원</td>
+  </tr>
+  <tr>
+    <td colspan="" rowspan="" headers="">eight</td>
+    <td colspan="" rowspan="" headers="">62만원</td>
+  </tr>
+  <tr>
+    <td colspan="" rowspan="" headers="">nine</td>
+    <td colspan="" rowspan="" headers="">62만원</td>
+  </tr>
+  <tr>
+    <td colspan="" rowspan="" headers="">ten</td>
+    <td colspan="" rowspan="" headers="">62만원</td>
+  </tr>
+</table>
+</body>
+</html>

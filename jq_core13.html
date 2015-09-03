@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<script src="jquery-1.11.3.js"></script>
+	<link rel="stylesheet" href="">
+	<script type="text/javascript">
+	$(function(){
+		//h3다음의 모든 형제의 배경색을 노랑색으로 변경
+		$('h3~p').css('background', 'yellow').width(150).css('text-align', 'center');;
+		$('h3+p').css('font-weight', 'bold').width(200).css('font-size', '20px');;
+		// h3바로 다음 형제의 글자를 굴게
+	})
+	</script>
+</head>
+<body>
+	
+<p>형제 선택자에 대하여</p>
+<h3>텔레토비 가족을 소개합니다</h3>
+<p>보라돌이</p>
+<p>뚜비</p>
+<p>나나</p>
+<p>뽀~</p>
+</body>
+</html>

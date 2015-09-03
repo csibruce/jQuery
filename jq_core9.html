@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<title></title>
+	<script type="text/javascript">
+	var noti = false;
+		$(function(){
+			$('#btn').height(50).width(70).css('background', 'lightgreen').css('font-size', '30px');
+			$('.p1').css('background', 'red').css('color', 'yellow');
+			$('.p2').css('background', 'green').css('color', 'black');
+			$('.p3').css('background', 'black').css('color', 'white');
+			$('.p4').css('background', 'yellow').css('color', 'red');
+			$('.p5').css('background', 'pink').css('color', 'blue');
+			$('.p6').css('background', 'black').css('color', 'white');
+			$('.p7').css('background', 'pink').css('color', 'green');
+			$('.p8').css('background', 'red').css('color', 'yellow');
+			var str = "";
+			$('p').each(function(index, el) {
+				$(this).css('font-size', '50px');
+				str += (index+1)+"번째요소 : "+$(this).html()+"\n";
+			});
+			// alert(str);
+
+			$('#btn').click(function() {
+				if(noti){
+				$('p').css('display', 'inline');
+				// chgc();
+				noti = false;
+				}else{
+				$('p').css('display', 'block');
+				noti=true;
+				}
+			});
+			
+			function chgc(){
+				var num = parseInt(Math.random()*10);
+				alert(num);
+			}
+			
+		})
+	</script>
+</head>
+<body>
+<input type="button" name="" id="btn" value="Test">
+<font color="red">colorFont</font>
+<p class="p p1">1<a>홍길동</a></p>
+<p class="p p2">2<a>개나리</a></p>
+<p class="p p3">3<a>진달래</a></p>
+<p class="p p4">4<a>호박꽃</a></p>
+<p class="p p5">5<a>무궁화</a></p>
+<p class="p p6">6<a>국화</a></p>
+<p class="p p7">7<a>안개꽃</a></p>
+<p class="p p8">8<a>장미</a></p>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<title></title>
+	<script type="text/javascript">
+	$(function(){
+		// var elem = $('<p>html문장</p>',props);
+
+		var elem = $('<div/>',{
+					'class' : 'test', //<div class="test"
+					'text'  : "try to push",
+					'click' : function(){
+								alert("you clicked it");	
+					 		  }
+		});
+		elem.appendTo('body');
+		$('.test').css('color', 'red');
+	});
+	</script>
+</head>
+<body>
+		This is Body.<br><br>
+	<div>
+		This is Div.
+	</div>
+	<p>
+		This is P-tag
+	</p>
+	
+</body>
+</html>

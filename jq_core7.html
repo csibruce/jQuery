@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<title></title>
+	<script type="text/javascript">
+		$(function(){
+			//alert($('body').html()); //BODY태그안의 모든 태그를 포함한 문장
+			//alert($('body').text()); //BODY태그안의 모든문자만
+			//alert($('p').text()); //P태그의 모든문자
+			//alert($('p').eq(1).html()); //P태그안의 태그를 포함한 문장
+								  //P태그가 여러개 일경우 첫번째 요소만 가져온다.
+			$('.p1').css('color', 'red');
+			$('.p2').css('color', 'yellow');
+			$('.p3').css('color', 'green');
+			$('.p4').css('color', 'black');
+			$('.p5').css('color', 'blue');
+			$('.p6').css('color', 'lightgreen');
+			$('.p7').css('color', 'red');
+	
+
+//////////////////////////////////////////////////////////////////////
+			var str="";
+			$('p').each(function(index, el) {
+				str += $(this).html()+"\n";
+			});
+			alert(str);
+
+		})
+	</script>
+</head>
+<body>
+<font color="red">colorFont</font>
+<p class="p p1">1<a>홍길동</a></p>
+<p class="p p2">2<a>개나리</a></p>
+<p class="p p3">3<a>진달래</a></p>
+<p class="p p4">4<a>호박꽃</a></p>
+<p class="p p5">5<a>무궁화</a></p>
+<p class="p p6">6<a>국화</a></p>
+<p class="p p7">7<a>안개꽃</a></p>
+<p class="p p8">8<a>장미</a></p>
+
+</body>
+</html>

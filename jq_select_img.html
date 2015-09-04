@@ -17,13 +17,26 @@
   td{
     width: 200px;
   }
-  tr:nth-child(even){
+ tbody tr:nth-child(even){
+    text-align: left;
+    font-size: 15px;
     background:white;
   }
-    tr:nth-child(odd){
+   tbody tr:nth-child(even):hover{
+    background:red;
+  }
+ tbody tr:nth-child(odd){
+  text-align: left;
+    font-size: 15px;
     background:lightgray;
   }
-
+   tbody tr:nth-child(odd):hover{
+    background:red;
+  }
+  thead tr{
+    background: black;
+    color: white;
+  }
 
   </style>
 
@@ -56,8 +69,16 @@
     $('li:lt(4)').css('font-size', '25px').css('font-weight', 'bold');
     $('li:even').css('font-size', '30px').css('color', 'lightgreen');
 
-
-
+    // $('tbody tr').hover(function() {
+    //   $(this).height(30);
+    // }, function() {
+    //    $(this).height(20);
+    // });
+var str = "";
+  for(var i=0; i<120;i++){
+     str += '<tr><td>'+i+'</td><td>'+i+i+i+'</td><td>'+i+i+i+i+i+i+'</td><td>data12</td></tr>'
+  }
+  $('.makerow').html(str);
   })
   </script>
 </head>
@@ -99,12 +120,19 @@
     </ul>
 
 <table>
+<thead>
+  <tr>
+    <td colspan="" rowspan="" headers="">name</td>
+    <td colspan="" rowspan="" headers="">price</td>
+  </tr>
+ </thead>   
+ <tbody>  
   <tr>
     <td colspan="" rowspan="" headers="">one</td>
     <td colspan="" rowspan="" headers="">62만원</td>
   </tr>
   <tr>
-    <td colspan="" rowspan="" headers="">twq</td>
+    <td colspan="" rowspan="" headers="">two</td>
     <td colspan="" rowspan="" headers="">62만원</td>
   </tr>
   <tr>
@@ -139,6 +167,80 @@
     <td colspan="" rowspan="" headers="">ten</td>
     <td colspan="" rowspan="" headers="">62만원</td>
   </tr>
+</tbody> 
 </table>
+
+<table>
+  <caption>table title and/or explanatory text</caption>
+  <thead>
+    <tr>
+      <th>name</th>
+      <th>city</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>홍길동</td>
+      <td>대전</td>
+    </tr>
+    <tr>
+      <td>개나리</td>
+      <td>서울</td>
+    </tr>
+    <tr>
+      <td>부르스</td>
+      <td>대전</td>
+    </tr>
+    <tr>
+      <td>무궁화</td>
+      <td>대구</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <caption>table title and/or explanatory text</caption>
+  <thead>
+    <tr>
+      <th width="50">no.</th>
+      <th width="100">witer</th>
+      <th width="400">title</th>
+      <th width="100">date</th>
+    </tr>
+  </thead>
+  <tbody class="makerow">
+    <tr>
+      <td>1</td>
+      <td>bruce</td>
+      <td>test content</td>
+      <td>15/09/04</td>
+    </tr>
+        <tr>
+      <td>1</td>
+      <td>data</td>
+      <td>data</td>
+      <td>data</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>data</td>
+      <td>data</td>
+      <td>data</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>여자에게 인기있는 남자</h2>
+<ul>
+  <li>병신</li>
+  <li>찌질이</li>
+  <li>좁밥</li>
+  <li>떨거지</li>
+  <li>띨띨이</li>
+</ul>
+<br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br>
 </body>
 </html>

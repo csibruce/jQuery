@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="jquery-1.11.3.js"></script>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<style type="text/css" media="screen">
+		div{
+			width: 300px;
+			height: 30px;
+			border: 1px solid green;
+		}
+	</style>
+	<script type="text/javascript">
+	$(function(){
+		$('span:not(:contains(jQuery))').css('border', '1px solid red');
+		$('div:empty').css('border', '2px solid orange');
+		$('div:parent').css('background', 'yellow').css('border', '2px solid red');;
+		$('span:contains(jQuery)').css('color', 'red').css('font-weight', 'bold').css('border', '2px solid blue');;
+		$('span :parent').css('border', '1px solid red');
+		$('div :has(span)').css('border', '3px solid red');
+		$('div span').css('color', 'blue').css('font-weight', 'bold');;
+	})
+	</script>
+</head>
+<body>
+	
+<div></div>
+<div>헬로우~~<span>오늘도 즐겁게~열심히!</span></div>
+<p>hello jQuery<span>Thanks, jQuery!</span></p>
+<div class="myClass">jQuery!</div>
+<span class="notMyClass">쉬운 jQuery~~!</span>
+<div></div>
+<br><br><hr color="blue">
+</body>
+</html>

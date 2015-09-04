@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="jquery-1.11.3.js"></script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+	<script type="text/javascript">
+	$(function(){
+		$('td:nth-child(1)').css('background', 'gray').css('font-weight', 'bold');;
+		$('td:nth-child(2)').css('background', 'lightgray').css('font-weight', 'bold');
+		$('td:nth-child(3)').css('background', 'white').css('font-weight', 'bold');
+
+		$('tr:eq(6) td').css('background', 'black').css('color', 'white');
+		$('table').css('text-align', 'center');
+		$('td').width(100);
+		$('td').hover(function() {
+			$(this).css('border', '1px solid red');
+		}, function() {
+			$(this).css('border', '0px solid red');
+		});
+	})
+	</script>
+</head>
+<body>
+	<table border="1">
+		<tr>
+			<td>이름</td>
+			<td>주소</td>
+			<td>전화번호</td>
+		</tr>
+		<tr>
+			<td>홍길동</td>
+			<td>대전</td>
+			<td>010-222-333</td>
+		</tr>
+		<tr>
+			<td>개나리</td>
+			<td>서울</td>
+			<td>010-222-333</td>
+		</tr>
+		<tr>
+			<td>진달래</td>
+			<td>부산</td>
+			<td>010-222-333</td>
+		</tr>
+		<tr>
+			<td>무궁화</td>
+			<td>대구</td>
+			<td>010-222-333</td>
+		</tr>
+		<tr>
+			<td>장미</td>
+			<td>광주</td>
+			<td>010-222-333</td>
+		</tr>
+	</table>
+	<br><hr><br>
+		<table>
+		<tr>
+			<td>이름</td>
+			<td>주소</td>
+			<td>전화번호</td>
+		</tr>
+		<tr>
+			<td>홍길동</td>
+			<td>대전</td>
+			<td>010-222-333</td>
+		</tr>
+		<tr>
+			<td>개나리</td>
+			<td>서울</td>
+			<td>010-222-333</td>
+		</tr>
+		<tr>
+			<td>진달래</td>
+			<td>부산</td>
+			<td>010-222-333</td>
+		</tr>
+		<tr>
+			<td>무궁화</td>
+			<td>대구</td>
+			<td>010-222-333</td>
+		</tr>
+		<tr>
+			<td>장미</td>
+			<td>광주</td>
+			<td>010-222-333</td>
+		</tr>
+	</table>
+</body>
+</html>
